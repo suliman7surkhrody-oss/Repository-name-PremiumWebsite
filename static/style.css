@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #050505;
+
+    color: white;
+
+}
+
+
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(0,0,0,0.7);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #00ffff;
+
+}
+
+
+
+.links a {
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.links a:hover {
+
+    color:#00ffff;
+
+}
+
+
+
+
+.hero {
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:
+
+    radial-gradient(circle at top,#173b4d,#050505);
+
+}
+
+
+
+.hero h1 {
+
+    font-size:70px;
+
+    max-width:900px;
+
+    background:
+
+    linear-gradient(90deg,#00ffff,#ff00ff);
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    animation: glow 3s infinite alternate;
+
+}
+
+
+
+.hero p {
+
+    margin-top:30px;
+
+    max-width:700px;
+
+    font-size:22px;
+
+    color:#ccc;
+
+}
+
+
+
+button {
+
+    margin-top:35px;
+
+    padding:16px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#00ffff;
+
+    color:#000;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover {
+
+    transform:translateY(-5px);
+
+    background:white;
+
+}
+
+
+
+
+section {
+
+    padding:100px 10%;
+
+    text-align:center;
+
+}
+
+
+
+h2 {
+
+    font-size:45px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+section p {
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:#ccc;
+
+    font-size:20px;
+
+}
+
+
+
+
+.cards {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.card {
+
+    background:
+
+    linear-gradient(145deg,#151515,#090909);
+
+    width:300px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    border:1px solid #222;
+
+    transition:.4s;
+
+}
+
+
+
+.card:hover {
+
+    transform:translateY(-15px);
+
+    border-color:#00ffff;
+
+}
+
+
+
+.card h3 {
+
+    color:#00ffff;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.project {
+
+    background:#111;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    font-size:24px;
+
+}
+
+
+
+
+#contact {
+
+    background:#101010;
+
+}
+
+
+
+
+footer {
+
+    text-align:center;
+
+    padding:30px;
+
+    background:black;
+
+    color:#777;
+
+}
+
+
+
+
+@keyframes glow {
+
+    from {
+
+        filter:drop-shadow(0 0 5px cyan);
+
+    }
+
+
+    to {
+
+        filter:drop-shadow(0 0 20px magenta);
+
+    }
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.hero h1 {
+
+    font-size:42px;
+
+}
+
+
+.links {
+
+    display:none;
+
+}
+
+
+h2 {
+
+    font-size:35px;
+
+}
+
+
+}
